@@ -4,7 +4,8 @@ WORKDIR /usr/src/
 
 COPY . .
 
-RUN npm i && npm run build && npm run prisma:migrate && npm run prisma:deploy
+RUN npm i
+RUN npm run build
 
 EXPOSE 5000
 
